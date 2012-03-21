@@ -56,7 +56,30 @@
       <span class="label">Tag1</span> <span class="label">Tag2</span> <span class="label">Tag3</span>
       </h1>
       <p>High level question summary<br> and it might keep going</p>
-
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#home">Home</a></li>
+  <li><a href="#profile">Profile</a></li>
+  <li><a href="#messages">Messages</a></li>
+  <li><a href="#settings">Settings</a></li>
+</ul>
+ 
+<div class="tab-content">
+  <div class="tab-pane active" id="home">...</div>
+  <div class="tab-pane" id="profile">...</div>
+  <div class="tab-pane" id="messages">...</div>
+  <div class="tab-pane" id="settings">...</div>
+</div>
+ 
+<script>
+  $(function () {
+    $('.tabs a:last').tab('show')
+  })
+</script>
+<script>
+  $(function () {
+    $('.tabs a:last').tab('show')
+  })
+</script>
     </div> <!-- /container -->
 
     <!-- Le javascript
