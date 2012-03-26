@@ -43,7 +43,12 @@
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#questions">Questions</a></li>
+              <li><a href="#leaderboard">Leaderboard</a></li>
+              <li><a href="#ask-question">Ask a Question</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#account">Account</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -56,25 +61,25 @@
       <span class="label">Tag1</span> <span class="label">Tag2</span> <span class="label">Tag3</span>
       </h1>
       <p>High level question summary<br> and it might keep going</p>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#home">Home</a></li>
-  <li class=""><a href="#profile">Profile</a></li>
-  <li class=""><a href="#messages">Messages</a></li>
-  <li class=""><a href="#settings">Settings</a></li>
-</ul>
- 
-<div class="tab-content">
-  <div class="tab-pane" id="home">...</div>
-  <div class="tab-pane" id="profile">...</div>
-  <div class="tab-pane" id="messages">...</div>
-  <div class="tab-pane" id="settings">...</div>
-</div>
-<script>
-   var load = function () {
-    $('.tabs').tab('show')
-    console.log('hi');
-  }
-</script>
+<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
+        <title>TabTest</title>
+    </head>
+    <body>
+        <div class="tabbable">
+           <ul class="nav nav-tabs">
+             <li class="active"><a href="#question" data-toggle="tab">Question</a></li>
+             <li><a href="#editor" data-toggle="tab">Editor</a></li>
+              <li><a href="#submissions" data-toggle="tab">Submissions</a></li>
+               <li><a href="#background" data-toggle="tab">Background</a></li>
+           </ul>
+           <div class="tab-content">
+               <div id="question" class="tab-pane active">tab1 content</div>
+               <div id="editor" class="tab-pane">tab2 content</div>
+               <div id="submissions" class="tab-pane">tab3 content</div>
+               <div id="background" class="tab-pane">tab4 content</div>
+           </div>
+        </div>
  
 
 
@@ -85,6 +90,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap-tab.js"></script>
+  
+    
     <!--<script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
