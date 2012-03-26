@@ -26,6 +26,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
   </head>
 
   <body onload="load()">
@@ -43,12 +44,7 @@
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#questions">Questions</a></li>
-              <li><a href="#leaderboard">Leaderboard</a></li>
-              <li><a href="#ask-question">Ask a Question</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#profile">Profile</a></li>
-              <li><a href="#account">Account</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -56,43 +52,43 @@
     </div>
 
     <div class="container">
+<!-------->
+<div id="content">
 
       <h1>Question
       <span class="label">Tag1</span> <span class="label">Tag2</span> <span class="label">Tag3</span>
       </h1>
       <p>High level question summary<br> and it might keep going</p>
-<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-tab.js"></script>
-        <title>TabTest</title>
-    </head>
-    <body>
-        <div class="tabbable">
-           <ul class="nav nav-tabs">
-             <li class="active"><a href="#question" data-toggle="tab">Question</a></li>
-             <li><a href="#editor" data-toggle="tab">Editor</a></li>
-              <li><a href="#submissions" data-toggle="tab">Submissions</a></li>
-               <li><a href="#background" data-toggle="tab">Background</a></li>
-           </ul>
-           <div class="tab-content">
-               <div id="question" class="tab-pane active">tab1 content</div>
-               <div id="editor" class="tab-pane">tab2 content</div>
-               <div id="submissions" class="tab-pane">tab3 content</div>
-               <div id="background" class="tab-pane">tab4 content</div>
-           </div>
-        </div>
- 
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#red" data-toggle="tab">Red</a></li>
+        <li><a href="#orange" data-toggle="tab">Orange</a></li>
+        <li><a href="#yellow" data-toggle="tab">Yellow</a></li>
+        <li><a href="#green" data-toggle="tab">Green</a></li>
+        <li><a href="#blue" data-toggle="tab">Blue</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+        <div class="tab-pane active" id="red"> <p>red red red red red red</p> </div>
+        <div class="tab-pane" id="orange"> <p>orange orange orange orange orange</p> </div>
+        <div class="tab-pane" id="yellow"> <p>yellow yellow yellow yellow yellow</p> </div>
+        <div class="tab-pane" id="green"> <p>green green green green green</p> </div>
+        <div class="tab-pane" id="blue"> <p>blue blue blue blue blue</p> </div>
+    </div>
+</div>
 
 
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+    });
+</script>    
     </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-  
-    
-    <!--<script src="js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--<script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
     <script src="js/bootstrap-dropdown.js"></script>
