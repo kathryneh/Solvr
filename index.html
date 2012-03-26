@@ -26,6 +26,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
   </head>
 
   <body onload="load()">
@@ -51,41 +52,43 @@
     </div>
 
     <div class="container">
+<!-------->
+<div id="content">
 
       <h1>Question
       <span class="label">Tag1</span> <span class="label">Tag2</span> <span class="label">Tag3</span>
       </h1>
       <p>High level question summary<br> and it might keep going</p>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#home">Home</a></li>
-  <li class=""><a href="#profile">Profile</a></li>
-  <li class=""><a href="#messages">Messages</a></li>
-  <li class=""><a href="#settings">Settings</a></li>
-</ul>
- 
-<div class="tab-content">
-  <div class="tab-pane" id="home">...</div>
-  <div class="tab-pane" id="profile">...</div>
-  <div class="tab-pane" id="messages">...</div>
-  <div class="tab-pane" id="settings">...</div>
+    <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+        <li class="active"><a href="#red" data-toggle="tab">Red</a></li>
+        <li><a href="#orange" data-toggle="tab">Orange</a></li>
+        <li><a href="#yellow" data-toggle="tab">Yellow</a></li>
+        <li><a href="#green" data-toggle="tab">Green</a></li>
+        <li><a href="#blue" data-toggle="tab">Blue</a></li>
+    </ul>
+    <div id="my-tab-content" class="tab-content">
+        <div class="tab-pane active" id="red"> <p>red red red red red red</p> </div>
+        <div class="tab-pane" id="orange"> <p>orange orange orange orange orange</p> </div>
+        <div class="tab-pane" id="yellow"> <p>yellow yellow yellow yellow yellow</p> </div>
+        <div class="tab-pane" id="green"> <p>green green green green green</p> </div>
+        <div class="tab-pane" id="blue"> <p>blue blue blue blue blue</p> </div>
+    </div>
 </div>
-<script>
-   var load = function () {
-    $('.tabs').tab('show')
-    console.log('hi');
-  }
-</script>
- 
 
 
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+    });
+</script>    
     </div> <!-- /container -->
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <!--<script src="js/bootstrap-transition.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--<script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
     <script src="js/bootstrap-alert.js"></script>
     <script src="js/bootstrap-modal.js"></script>
     <script src="js/bootstrap-dropdown.js"></script>
